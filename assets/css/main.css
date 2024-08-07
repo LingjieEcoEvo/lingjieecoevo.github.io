@@ -3130,35 +3130,41 @@ input, select, textarea {
 @media screen and (max-width: 768px) {
     #header {
         width: 100%; /* 使 header 占据整个屏幕宽度 */
-        height: auto; /* 让高度自动适应内容 */
+        height: auto; /* 高度自动适应内容 */
         padding: 1em 1em; /* 减小内边距 */
-        position: relative; /* 确保它不再固定在屏幕左侧 */
-        text-align: center; /* 让文本居中显示 */
+        position: fixed; /* 固定在屏幕顶部 */
+        top: 0; /* 确保其在页面的顶部 */
+        left: 0; /* 从屏幕左边开始 */
+        background-color: #1f1815; /* 确保背景颜色与之前一致 */
+        z-index: 1000; /* 确保 header 在最前面 */
+        display: flex; /* 使用 flex 布局 */
+        justify-content: center; /* 水平居中选项 */
+        flex-wrap: wrap; /* 使选项换行 */
     }
 
     #header .inner {
+        width: 100%; /* 让 inner 占据整个 header 宽度 */
         display: flex;
-        flex-direction: column;
+        flex-direction: row; /* 让内容水平排列 */
+        justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     #header .image.avatar {
         width: 4em; /* 减小头像尺寸 */
         height: auto;
-        margin-bottom: 1em;
+        margin-right: 1em; /* 在头像与选项之间添加一些空间 */
     }
 
-    #header h1 {
-        font-size: 1.2em; /* 减小字体大小 */
-    }
-    
     #header a {
-        margin-top: 0.5em; /* 调整导航链接的间距 */
+        font-size: 1em; /* 调整导航链接的字体大小 */
+        margin: 0.5em; /* 每个链接之间的间距 */
     }
-    
+
     #main {
-        margin-left: 0; /* 取消主内容的左边距 */
-        padding: 2em 1em; /* 减小主内容的内边距 */
+        margin-top: 5em; /* 为 main 内容留出 header 的高度 */
+        padding: 2em 1em; /* 减小内边距 */
     }
 }
 
