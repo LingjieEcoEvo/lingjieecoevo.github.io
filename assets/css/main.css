@@ -101,7 +101,7 @@ input, select, textarea {
 		color: #000000;
 		font-family: "Source Sans Pro", Helvetica Light, sans-serif;
 		font-size: 16pt;
-		font-weight: 400!important;
+		font-weight: 400;
 		line-height: 1.75em;
 	}
 
@@ -3043,7 +3043,7 @@ input, select, textarea {
 
 @media screen and (max-width: 430px) {
     #header {
-        width: 80%; /* Adjust header width */
+        width: 100%; /* Adjust header width */
         height: auto; /* Set height to auto for dynamic adjustment */
         padding: 1em 0;
         position: fixed;
