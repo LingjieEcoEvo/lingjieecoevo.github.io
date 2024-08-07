@@ -3043,43 +3043,40 @@ input, select, textarea {
 
 @media screen and (max-width: 430px) {
     #header {
-        width: 100%; /* Adjust header width */
-        height: 50%; /* Set height to auto for dynamic adjustment */
+        width: 100%;
+        height: auto; /* 动态调整高度 */
         padding: 1em 0;
         position: fixed;
         top: 0;
-        left: 10%; /* Center the header */
-        background-size: cover; /* Adjust background size to cover */
-        background-position: center; /* Center the background image */
+        background-size: cover;
+        background-position: center;
     }
 
-    /* Adjust other elements as needed */
     #header .inner {
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column; /* 改为列布局 */
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
     }
 
     #header .image.avatar {
-        width: 1em;
+        width: 2em; /* 增加图像尺寸 */
         height: auto;
         margin: 0.5em;
     }
 
     #header a {
-        font-size: 0.5em;
+        font-size: 0.8em; /* 增大字体 */
         margin: 0.5em;
-        padding-left: 1em; /* Adjust this value to align text properly */
-        padding-right: 1em; /* Adjust this value to align text properly */
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
     #header h1 {
-        font-size: 0.8em; /* Adjust h1 font size for iPhone */
-        line-height: 1.2em;
-        text-align: center; /* Center align header text */
+        font-size: 1.2em; /* 增大标题字体 */
+        line-height: 1.4em;
+        text-align: center;
     }
 }
 
