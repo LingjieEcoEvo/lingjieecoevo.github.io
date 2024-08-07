@@ -3042,22 +3042,17 @@ input, select, textarea {
 /* Iphone */
 @media screen and (max-width: 430px) {
     #header {
-        width: 80%; /* Make header narrower */
-        height: auto;
+        width: 80%; /* Adjust header width */
+        height: auto; /* Set height to auto for dynamic adjustment */
         padding: 1em 0;
         position: fixed;
         top: 0;
         left: 10%; /* Center the header */
-        background-color: #1f1815;
-        z-index: 1000;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        background-image: url("images/hd.jpg"), url("images/hd.jpg");
-        background-position: top center;
-        background-size: cover;
+        background-size: cover; /* Adjust background size to cover */
+        background-position: center; /* Center the background image */
     }
 
+    /* Adjust other elements as needed */
     #header .inner {
         width: 100%;
         display: flex;
@@ -3076,44 +3071,14 @@ input, select, textarea {
     #header a {
         font-size: 0.5em;
         margin: 0.5em;
-		padding-left: 1em; /* Adjust this value to align text properly */
-		padding-right: 1em; /* Adjust this value to align text properly */
-	}
+        padding-left: 1em; /* Adjust this value to align text properly */
+        padding-right: 1em; /* Adjust this value to align text properly */
+    }
 
     #header h1 {
-        font-size: 0.5em; /* Adjust h1 font size for iPhone */
+        font-size: 0.8em; /* Adjust h1 font size for iPhone */
         line-height: 1.2em;
         text-align: center; /* Center align header text */
-    }
-
-    #main {
-        margin-top: 7em;
-        padding: 2em 1em;
-    }
-
-    .profile-section {
-        width: 100%; /* Adjust content width for iPhone */
-        float: none;
-        padding-right: 0;
-        text-align: center; /* Center align content */
-    }
-
-    .profile-photo {
-        width: 50%;
-        margin: 0 auto 2em auto; /* Center align photo */
-        float: none;
-    }
-
-    .profile-photo img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-
-    .profile-section:after, .profile-photo:after {
-        content: "";
-        display: table;
-        clear: both;
     }
 }
 
