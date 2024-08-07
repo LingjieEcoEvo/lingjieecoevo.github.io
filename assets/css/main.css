@@ -3042,7 +3042,7 @@ input, select, textarea {
 /* Iphone */
 @media screen and (max-width: 430px) {
     #header {
-        width: 60%; /* Adjust header width */
+        width: 100%; /* Adjust header width */
         height: auto; /* Set height to auto for dynamic adjustment */
         padding: 1em 0;
         position: fixed;
