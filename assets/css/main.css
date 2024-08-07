@@ -3127,7 +3127,7 @@ input, select, textarea {
 
 /* Small */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
     #header {
         width: 100%; /* 使 header 占据整个屏幕宽度 */
         height: auto; /* 高度自动适应内容 */
@@ -3170,7 +3170,7 @@ input, select, textarea {
 
 /* XSmall */
 
-	@media screen and (max-width: 480px) {
+	/* @media screen and (max-width: 480px) {
 
 		/* Header */
 
@@ -3192,7 +3192,7 @@ input, select, textarea {
 				padding-left: 0;
 			}
 
-	}
+	} */
 
 	.profile-section {
 		width: 70%;
