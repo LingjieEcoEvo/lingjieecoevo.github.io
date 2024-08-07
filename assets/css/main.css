@@ -3028,7 +3028,7 @@ input, select, textarea {
     }
 
     #header a {
-        font-size: 0.5em;
+        font-size: 1em;
         margin: 0.5em;
     }
 
@@ -3038,6 +3038,89 @@ input, select, textarea {
     }
 }
 
+
+/* Iphone */
+@media screen and (max-width: 430px) {
+    /* Your CSS for all iPhones */
+    #header {
+        width: 100%;
+        height: auto;
+        padding: 1em 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #1f1815;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-image: url("images/hd.jpg"), url("images/hd.jpg");
+        background-position: top center;
+        background-size: cover;
+    }
+
+    #header .inner {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #header .image.avatar {
+        width: 1.5em;
+        height: auto;
+        margin: 0.5em;
+    }
+
+    #header a {
+        font-size: 1em;
+        margin: 0.5em;
+    }
+
+    #header h1 {
+        font-size: 0.8em; /* Adjust h1 font size for iPhone */
+        line-height: 1.2em;
+    }
+
+    #main {
+        margin-top: 7em;
+        padding: 2em 1em;
+    }
+
+    .profile-section {
+        width: 100%; /* Adjust content width for iPhone */
+        float: none;
+        padding-right: 0;
+        text-align: center; /* Center align content */
+    }
+
+    .profile-photo {
+        width: 50%;
+        margin: 0 auto 2em auto; /* Center align photo */
+        float: none;
+    }
+
+    .profile-photo img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .profile-section:after, .profile-photo:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@media only screen and (max-width: 375px) and (min-width: 320px) {
+    /* Specific styles for iPhone SE */
+    #header h1 {
+        font-size: 0.75em;
+    }
+}
 
 
 	.profile-section {
