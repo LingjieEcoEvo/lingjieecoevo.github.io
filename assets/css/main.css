@@ -3076,7 +3076,7 @@ input, select, textarea {
 }
 
 #header .image.avatar {
-    width: 6em;
+    width: 2em;
     height: auto;
     margin-bottom: 1em;
 }
@@ -3170,6 +3170,8 @@ input, select, textarea {
         padding: 2em 1em;
     }
 }
+
+
 
 	.profile-section {
 		width: 70%;
