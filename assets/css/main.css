@@ -3075,13 +3075,13 @@ input, select, textarea {
     }
 
     #header a {
-        font-size: 1em;
+        font-size: 0.8em;
         margin: 0.5em;
     }
 
     #header h1 {
         font-size: 0.8em; /* Adjust h1 font size for iPhone */
-        line-height: 1.2em;
+        line-height: 0.8em;
     }
 
     #main {
