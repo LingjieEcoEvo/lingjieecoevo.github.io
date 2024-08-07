@@ -3127,81 +3127,40 @@ input, select, textarea {
 
 /* Small */
 
-	@media screen and (max-width: 736px) {
+@media screen and (max-width: 768px) {
+    #header {
+        width: 100%; /* 使 header 占据整个屏幕宽度 */
+        height: auto; /* 让高度自动适应内容 */
+        padding: 1em 1em; /* 减小内边距 */
+        position: relative; /* 确保它不再固定在屏幕左侧 */
+        text-align: center; /* 让文本居中显示 */
+    }
 
-		/* Basic */
+    #header .inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-			h1 {
-				font-size: 1.5em;
-			}
+    #header .image.avatar {
+        width: 4em; /* 减小头像尺寸 */
+        height: auto;
+        margin-bottom: 1em;
+    }
 
-			h2 {
-				font-size: 1.2em;
-			}
-
-			h3 {
-				font-size: 1em;
-			}
-
-		/* Section/Article */
-
-			section.special, article.special {
-				text-align: center;
-			}
-
-			header.major h2 {
-				font-size: 1.35em;
-			}
-
-		/* List */
-
-			ul.labeled-icons li {
-				padding-left: 2em;
-			}
-
-				ul.labeled-icons li h3 {
-					line-height: 1.75em;
-				}
-
-		/* Header */
-
-			#header {
-				padding: 2.25em 1.5em;
-			}
-
-				#header h1 {
-					font-size: 1.35em;
-				}
-
-		/* Footer */
-
-			#footer {
-				padding: 2.25em 1.5em;
-			}
-
-		/* Main */
-
-			#main {
-				padding: 2.25em 1.5em 0.25em 1.5em;
-			}
-
-				#main > section {
-					margin: 2.25em 0 0 0;
-					padding: 2.25em 0 0 0;
-				}
-
-		/* Poptrox */
-
-			.poptrox-popup {
-				border-radius: 0;
-			}
-
-				.poptrox-popup .nav-next:before,
-				.poptrox-popup .nav-previous:before {
-					margin-top: -1em;
-				}
-
-	}
+    #header h1 {
+        font-size: 1.2em; /* 减小字体大小 */
+    }
+    
+    #header a {
+        margin-top: 0.5em; /* 调整导航链接的间距 */
+    }
+    
+    #main {
+        margin-left: 0; /* 取消主内容的左边距 */
+        padding: 2em 1em; /* 减小主内容的内边距 */
+    }
+}
 
 /* XSmall */
 
