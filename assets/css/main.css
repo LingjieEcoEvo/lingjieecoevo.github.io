@@ -3040,89 +3040,47 @@ input, select, textarea {
 
 	@media screen and (max-width: 980px) {
 
-		/* Basic */
-
-			h1 br, h2 br, h3 br, h4 br, h5 br, h6 br {
-				display: none;
-			}
-
-		/* List */
-
-			ul.icons li .icon {
-				font-size: 1.25em;
-			}
-
-		/* Header */
-
-			#header {
-    width: 100%;
-    height: auto;
-    padding: 2em 0;
-    background-color: #1f1815;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    background-image: url("images/hd.jpg"), url("images/hd.jpg");
-    background-position: top center;
-    background-size: cover;
-}
-
-#header .inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#header .image.avatar {
-    width: 2em;
-    height: auto;
-    margin-bottom: 1em;
-}
-
-		/* Footer */
-
-			#footer {
-				background-attachment: scroll;
-				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-				background-position: top left,						bottom center;
-				background-repeat: repeat,							no-repeat;
-				background-size: auto,							cover;
-				bottom: auto;
-				left: auto;
-				padding: 4em 4em 6em 4em;
-				position: relative;
-				text-align: center;
-				width: 100%;
-			}
-
-				#footer .icons {
-					margin: 0 0 1em 0;
-				}
-
-				#footer .copyright {
-					margin: 0 0 1em 0;
-				}
-
-					#footer .copyright li {
-						border-left-width: 1px;
-						display: inline-block;
-						line-height: 1em;
-						margin-left: 0.75em;
-						padding-left: 0.75em;
-					}
-
-		/* Main */
-
-			#main {
-				margin: 0 auto;
-				padding: 8em 4em;
-				width: 100%;
-				max-width: 100em;
-			}
-
+		#header {
+			width: 100%;
+			height: auto;
+			padding: 1em 0;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background-color: #1f1815;
+			z-index: 1000;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			background-image: url("images/hd.jpg"), url("images/hd.jpg");
+			background-position: top center;
+			background-size: cover;
+		}
+	
+		#header .inner {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+	
+		#header .image.avatar {
+			width: 1.5em;
+			height: auto;
+			margin: 0.5em;
+		}
+	
+		#header a {
+			font-size: 1em;
+			margin: 0.5em;
+		}
+	
+		#main {
+			margin-top: 7em;
+			padding: 2em 1em;
+		}
 	}
 
 /* Small */
