@@ -99,9 +99,9 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #000000;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Source Sans Pro", Helvetica Light, sans-serif;
 		font-size: 16pt;
-		font-weight: 400;
+		font-weight: 400!important;
 		line-height: 1.75em;
 	}
 
@@ -3114,4 +3114,15 @@ input, select, textarea {
 		content: "";
 		display: table;
 		clear: both;
+	}
+
+
+
+
+	.comment {
+		border: 2px solid #48464C		; /* 边框颜色 */
+		background-color: #EAF0F3		; /* 背景颜色 */
+		padding: 10px; /* 内边距 */
+		border-radius: 5px; /* 圆角 */
+		margin-top: 10px; /* 上外边距 */
 	}
