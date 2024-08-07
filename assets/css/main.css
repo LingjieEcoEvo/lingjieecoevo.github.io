@@ -3042,17 +3042,17 @@ input, select, textarea {
 /* Iphone */
 @media screen and (max-width: 430px) {
     #header {
-        width: 80%; /* Adjust header width */
-        height: auto; /* Set height to auto for dynamic adjustment */
+        width: 100%; /* Set header width to 100% */
+        height: auto;
         padding: 1em 0;
         position: fixed;
         top: 0;
-        left: 10%; /* Center the header */
-        background-size: cover; /* Adjust background size to cover */
-        background-position: center; /* Center the background image */
+        left: 0; /* Align header to the left */
+        background-size: cover;
+        background-position: center;
     }
 
-    /* Adjust other elements as needed */
+    /* Other adjustments if needed */
     #header .inner {
         width: 100%;
         display: flex;
@@ -3071,17 +3071,15 @@ input, select, textarea {
     #header a {
         font-size: 0.8em;
         margin: 0.5em;
-        padding-left: 1em; /* Adjust this value to align text properly */
-        padding-right: 1em; /* Adjust this value to align text properly */
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
     #header h1 {
-        font-size: 0.8em; /* Adjust h1 font size for iPhone */
+        font-size: 0.8em;
         line-height: 1.2em;
-        text-align: center; /* Center align header text */
+        text-align: center;
     }
-
-	
 }
 
 @media only screen and (max-width: 375px) and (min-width: 320px) {
