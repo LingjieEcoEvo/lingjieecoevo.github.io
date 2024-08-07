@@ -98,7 +98,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #a2a2a2;
+		color: #000000;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -135,7 +135,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #787878;
+		color: #000000;
 		font-weight: 400;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -2574,45 +2574,46 @@ input, select, textarea {
 
 /* Header */
 
-	#header {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-direction: column;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-moz-align-items: -moz-flex-end;
-		-webkit-align-items: -webkit-flex-end;
-		-ms-align-items: -ms-flex-end;
-		align-items: flex-end;
-		-moz-justify-content: space-between;
-		-webkit-justify-content: space-between;
-		-ms-justify-content: space-between;
-		justify-content: space-between;
-		background-color: #1f1815;
-		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("images/hd.jpg");
-		background-position: top left,							top left;
-		background-repeat: repeat,								no-repeat;
-		background-size: auto,								150%;
-		color: rgba(255, 255, 255, 0.5);
-		height: 100%;
-		left: 0;
-		padding: 8em 4em;
-		position: fixed;
-		text-align: right;
-		top: 0;
-		width: 15%;
-	}
+#header {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -moz-align-items: -moz-flex-end;
+    -webkit-align-items: -webkit-flex-end;
+    -ms-align-items: -ms-flex-end;
+    align-items: flex-end;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    background-color: #1f1815;
+    background-attachment: scroll, scroll;
+    background-image: url("images/overlay.png"), url("images/hd.jpg");
+    background-position: top left, top left;
+    background-repeat: repeat, no-repeat;
+    background-size: cover, cover; /* 修改为cover */
+    color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    left: 0;
+    padding: 8em 4em;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    width: 15%;
+}
 
 		#header > * {
 			-moz-flex-shrink: 0;
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
-			width: 100%;
+			width: 15%;
+			min-width: 150px
 		}
 
 		#header > .inner {
@@ -2640,6 +2641,7 @@ input, select, textarea {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
+			max-width: 5em;
 			width: 5em;
 		}
 
@@ -3053,25 +3055,31 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				background-attachment: scroll;
-				background-position: top left, center center;
-				background-size: auto,		cover;
-				left: auto;
-				padding: 6em 4em;
-				position: relative;
-				text-align: center;
-				top: auto;
-				width: 100%;
-				display: block;
-			}
+    width: 100%;
+    height: auto;
+    padding: 2em 0;
+    background-color: #1f1815;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-image: url("images/hd.jpg"), url("images/hd.jpg");
+    background-position: top center;
+    background-size: cover;
+}
 
-				#header h1 {
-					font-size: 1.75em;
-				}
+#header .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-					#header h1 br {
-						display: inline;
-					}
+#header .image.avatar {
+    width: 6em;
+    height: auto;
+    margin-bottom: 1em;
+}
 
 		/* Footer */
 
@@ -3109,9 +3117,10 @@ input, select, textarea {
 		/* Main */
 
 			#main {
-				margin: 0;
-				padding: 6em 4em;
+				margin: 0 auto;
+				padding: 8em 4em;
 				width: 100%;
+				max-width: 100em;
 			}
 
 	}
@@ -3218,4 +3227,29 @@ input, select, textarea {
 				padding-left: 0;
 			}
 
+	}
+
+	.profile-section {
+		width: 70%;
+		float: left;
+		padding-right: 5%;
+	}
+	
+	.profile-photo {
+		width: 25%;
+		float: right;
+		text-align: center;
+	}
+	
+	.profile-photo img {
+		max-width: 100%;
+		height: auto;
+		border-radius: 10px; /* 可选：为照片添加圆角 */
+	}
+	
+	/* 清除浮动样式 */
+	.profile-section:after, .profile-photo:after {
+		content: "";
+		display: table;
+		clear: both;
 	}
