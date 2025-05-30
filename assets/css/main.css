@@ -3170,3 +3170,7 @@ input, select, textarea {
     height: auto;          /* 高度自适应 */
 }
 
+.your-element {
+  -webkit-backdrop-filter: blur(5px); /* Safari */
+          backdrop-filter: blur(5px);
+}
