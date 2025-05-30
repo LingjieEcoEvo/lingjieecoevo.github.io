@@ -99,11 +99,19 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #000000;
-		font-family: "Source Sans Pro", Helvetica Light, sans-serif;
+		font-family: "Times New Roman", Times, serif;
 		font-size: 16pt;
 		font-weight: 400;
-		line-height: 1.75em;
+		line-height: 1.5em;
 	}
+
+	h1, h2, h3, h4, h5, h6 {
+    color: #000000;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 400;
+    line-height: 1em;
+    margin: 0 0 1em 0;
+	}	
 
 	a {
 		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
@@ -2575,6 +2583,7 @@ input, select, textarea {
 /* Header */
 
 #header {
+    /* 布局属性（完全保留） */
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -2591,13 +2600,13 @@ input, select, textarea {
     -webkit-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
-    background-color: #1f1815;
-    background-attachment: scroll, scroll;
-    background-image: url("images/overlay.png"), url("images/hd.jpg");
-    background-position: top left, top left;
-    background-repeat: repeat, no-repeat;
-    background-size: cover, cover; /* 修改为cover */
-    color: rgba(255, 255, 255, 0.5);
+
+    /* 修改背景 */
+    background: #052659 !important;
+    background-image: none !important;
+
+    /* 文字和保留属性 */
+    color: rgba(255, 255, 255, 0.9);
     height: 100%;
     left: 0;
     padding: 8em 4em;
@@ -3126,9 +3135,38 @@ input, select, textarea {
 
 
 	a {
-		color: #002FA7;
+		color: #052659; /* 超级链接 */
+		border-bottom-color: #052659;
 		text-decoration: none; /* 可选：移除下划线 */
 	}
 	a:hover {
 		text-decoration: underline; /* 可选：鼠标悬停时添加下划线 */
 	}
+
+.timeline-item {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 2em;
+}
+
+.timeline-content {
+    border-left: 2px solid #052659;
+    padding-left: 20px;
+}
+
+.timeline-image {
+    margin: 10px 0;
+    max-width: 50%;       /* 改为100%适应容器宽度 */
+    width: auto;           /* 保持原始宽高比 */
+    height: auto;          /* 保持原始宽高比 */
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: block;        /* 避免行内元素的默认间隙 */
+}
+
+/* 如果需要限制最大宽度 */
+.timeline-image img {
+    max-width: 50%;       /* 图片不超过父容器 */
+    height: auto;          /* 高度自适应 */
+}
+
