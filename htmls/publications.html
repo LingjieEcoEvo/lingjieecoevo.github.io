@@ -145,6 +145,18 @@
 			<script src="../assets/js/breakpoints.min.js"></script>
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
+			<script>
+			document.querySelectorAll('.pub-text u').forEach(el => {
+				el.style.cursor = 'pointer';
+				el.addEventListener('click', () => {
+				const allNames = document.querySelectorAll('.pub-text u');
+				const highlighted = [...allNames].some(u => u.style.backgroundColor === 'rgb(229, 242, 254)');
+				allNames.forEach(u => {
+					u.style.backgroundColor = highlighted ? 'transparent' : '#E5F2FE';
+				});
+				});
+			});
+			</script>
 
 	</body>
 </html>
